@@ -1,0 +1,52 @@
+.imageProps {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.personimage {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+
+.headerback {
+    background-color: #012636 !important;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.branBack {
+    color: #fff !important;
+    padding-left: 1.5rem;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 15px;
+
+}
+
+.border-right {
+    border-right: 1px solid rgba(255, 255, 255, .35);
+    margin-right: 15px
+}
+
+.sample {
+    color: #ffd373
+}
+
+.iconSize {
+    color: white
+}
+
+.branBack li {
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rightnav li {
+    padding: 10px;
+}

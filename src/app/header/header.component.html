@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light headerback">
+    <img src="{{imagepath}}" alt="logo" class="imageProps" />
+    <div>
+        <ul class="branBack">
+            <li href="#">Projects</li>
+            <li href="#" class="sample">Sample Projects</li>
+        </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav  ml-auto ms-auto rightnav">
+            <li class="nav-item active border-right">
+
+                <img src="{{imageupgrate}}" alt="logo" class="imageProps" />
+                <span class="sample">UPGRADE</span>
+            </li>
+
+            <li class="nav-item">
+                <i i-bs name="search" class="iconSize"></i>
+            </li>
+            <li class="nav-item">
+                <i i-bs name="bell" class="iconSize"></i>
+            </li>
+            <li class="nav-item">
+                <i i-bs name="wrench" class="iconSize"></i>
+            </li>
+            <li class="nav-item ">
+                <i i-bs name="person-circle" class="iconSize personimage"></i>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
