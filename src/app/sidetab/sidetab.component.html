@@ -1,0 +1,74 @@
+<div class="d-flex">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+        <li ngbNavItem="1" placement="end" ngbTooltip="Dashboard" routerLink="/dashboard">
+            <a ngbNavLink>
+                <i i-bs name="laptop-fill" class="iconSize"></i>
+                <span class="textTab">Dashboard</span>
+            </a>
+
+            <ng-template ngbNavContent>
+                <app-dashboard></app-dashboard>
+            </ng-template>
+        </li>
+        <li ngbNavItem="2" placement="end" ngbTooltip="Feed" routerLink="/feed">
+            <a ngbNavLink>
+                <i i-bs name="file-bar-graph" class="iconSize"></i>
+                <span class="textTab">Feed</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-feed></app-feed>
+            </ng-template>
+        </li>
+        <li ngbNavItem="3" placement="end" ngbTooltip="Backlog" routerLink="/backlog">
+            <a ngbNavLink>
+                <i i-bs name="book-half" class="iconSize"></i>
+                <span class="textTab">Backlog</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-backlog></app-backlog>
+            </ng-template>
+        </li>
+        <li ngbNavItem="4" placement="end" ngbTooltip="Epics" routerLink="/epics">
+            <a ngbNavLink>
+                <i i-bs name="sticky" class="iconSize"></i>
+                <span class="textTab">Epics</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-epics></app-epics>
+            </ng-template>
+        </li>
+        <li ngbNavItem="5" placement="end" ngbTooltip="Release" routerLink="/release">
+            <a ngbNavLink>
+                <i i-bs name="cursor" class="iconSize"></i>
+                <span class="textTab">Release</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-release></app-release>
+            </ng-template>
+        </li>
+        <li ngbNavItem="6" placement="end" ngbTooltip="Board" routerLink="board">
+            <a ngbNavLink>
+                <i i-bs name="layout-three-columns" class="iconSize"></i>
+                <span class="textTab">Board</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-board></app-board>
+            </ng-template>
+        </li>
+        <li ngbNavItem="7" placement="end" ngbTooltip="Reports" routerLink="/reports">
+            <a ngbNavLink>
+                <i i-bs name="graph-up" class="iconSize"></i>
+                <span class="textTab">Reports</span>
+            </a>
+            <ng-template ngbNavContent>
+                <app-reports></app-reports>
+            </ng-template>
+        </li>
+
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>
+
+
+<router-outlet></router-outlet>

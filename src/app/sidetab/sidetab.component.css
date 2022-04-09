@@ -1,0 +1,49 @@
+.nav-pills li a i {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+.nav-pills {
+    height: 100vh;
+    border-right: 1px solid #cdd0d9;
+    background-color: #f5f5f5;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.nav-link {
+    color: #111;
+}
+
+.textTab {
+    text-align: center;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: #012636 !important;
+
+    color: white !important;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .show>.nav-link {
+    background: rgba(0, 45, 69, .1) !important;
+
+    color: #111 !important;
+}
+
+.nav-pills .nav-link {
+
+    border-radius: 0px !important;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 12px;
+}

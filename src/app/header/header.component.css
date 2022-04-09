@@ -5,6 +5,27 @@
     margin-right: 5px;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.navbar-light .navbar-toggler:focus-visible {
+    outline: none !important;
+}
+
+button:focus-visible {
+    outline: none !important;
+}
+
+.navbar-light .navbar-toggler-icon:focus-visible {
+    outline: none !important;
+}
+
+.imageProps:hover {
+    cursor: pointer;
+}
+
 .personimage {
     width: 1.5rem !important;
     height: 1.5rem !important;
@@ -49,4 +70,8 @@
 
 .rightnav li {
     padding: 10px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
 }
